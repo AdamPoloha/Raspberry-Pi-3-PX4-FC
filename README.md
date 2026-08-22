@@ -15,3 +15,7 @@ git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 cd PX4-Autopilot
 bash ./Tools/setup/ubuntu.sh --no-sim-tools --no-nuttx
 make scumaker_pilotpi_arm64 -j3
+
+Run
+cd ~/PX4-Autopilot/build/scumaker_pilotpi_arm64/bin
+sudo ./px4 -s /home/pilot/PX4-Autopilot/posix-configs/rpi/pilotpi_mc.config
