@@ -12,7 +12,10 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 Clone and Build
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
-cd PX4-Autopilot
+cd ~/PX4-Autopilot/boards/scumaker/pilotpi
+rm ./arm64.px4board
+wget https://raw.githubusercontent.com/AdamPoloha/Raspberry-Pi-3-PX4-FC/refs/heads/main/Software/arm64.px4board
+cd ~/PX4-Autopilot
 bash ./Tools/setup/ubuntu.sh --no-sim-tools --no-nuttx
 make scumaker_pilotpi_arm64 -j3
 
