@@ -17,5 +17,7 @@ bash ./Tools/setup/ubuntu.sh --no-sim-tools --no-nuttx
 make scumaker_pilotpi_arm64 -j3
 
 Run
+cd ~/PX4-Autopilot/posix-configs/rpi
+wget https://raw.githubusercontent.com/AdamPoloha/Raspberry-Pi-3-PX4-FC/refs/heads/main/Software/rpipx4.config
 cd ~/PX4-Autopilot/build/scumaker_pilotpi_arm64/bin
-sudo ./px4 -s /home/pilot/PX4-Autopilot/posix-configs/rpi/pilotpi_mc.config
+sudo ./px4 -s ~/PX4-Autopilot/posix-configs/rpi/rpipx4.config
