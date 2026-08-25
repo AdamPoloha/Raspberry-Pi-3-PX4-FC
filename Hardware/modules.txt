@@ -1,0 +1,32 @@
+IMU:
+ICM42688P
+ICM42605
+MPU6500 Unofficial Tested
+
+MAG:
+IST8310
+QMC5883L
+QMC5883P Unofficial Tested
+
+BARO:
+MS5611
+BMP280 Unofficial Tested
+
+ADC:
+ADS1115
+
+PWM:
+PCA9685 Official Tested
+
+GPS:
+/dev/ttySC0
+
+AIR:
+MS4525DO
+
+RC:
+/dev/ttyAMA0
+
+mavlink:
+/dev/ttySC1
+/dev/ttyUSB0 Unofficial Tested
