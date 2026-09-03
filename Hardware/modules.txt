@@ -13,7 +13,7 @@ MS5611
 BMP280 Unofficial Tested
 
 ADC:
-ADS1115
+ADS1115 Official Tested
 
 PWM:
 PCA9685 Official Tested
